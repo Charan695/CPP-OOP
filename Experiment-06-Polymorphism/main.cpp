@@ -33,5 +33,5 @@ int main() {
     shapes.push_back(make_unique<Circle>(3));
     shapes.push_back(make_unique<Rectangle>(4, 5));
     shapes.push_back(make_unique<Triangle>(6, 4));
-    for (const auto& shape : shapes) cout << "Area: " << shape->area() << '\\n';
+    for (const auto& shape : shapes) cout << "Area: " << shape->area() << '\n';
 }
