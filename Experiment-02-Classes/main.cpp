@@ -19,7 +19,7 @@ public:
     }
     double getBalance() const { return balance; }
     void display() const {
-        cout << holder << " (" << accountType << ") balance: " << balance << '\\n';
+        cout << holder << " (" << accountType << ") balance: " << balance << '\n';
     }
 };
 
