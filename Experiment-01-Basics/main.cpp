@@ -10,21 +10,21 @@ int main() {
     string name = "Student";
     const int semester = 3;
 
-    cout << "Name: " << name << "\\nAge: " << age
-         << "\\nCGPA: " << cgpa << "\\nGrade: " << grade
-         << "\\nEnrolled: " << boolalpha << enrolled
-         << "\\nSemester: " << semester << '\\n';
+    cout << "Name: " << name << "\nAge: " << age
+         << "\nCGPA: " << cgpa << "\nGrade: " << grade
+         << "\nEnrolled: " << boolalpha << enrolled
+         << "\nSemester: " << semester << '\n';
 
     int a = 12, b = 5;
-    cout << "Addition: " << a + b << "\\nGreater: " << (a > b)
-         << "\\nLogical AND: " << (a > 0 && b > 0) << '\\n';
+    cout << "Addition: " << a + b << "\nGreater: " << (a > b)
+         << "\nLogical AND: " << (a > 0 && b > 0) << '\n';
 
     int input{};
     cout << "Enter an integer: ";
     if (!(cin >> input)) {
-        cerr << "Invalid input\\n";
+        cerr << "Invalid input\n";
         return 1;
     }
-    cout << "You entered: " << input << '\\n';
+    cout << "You entered: " << input << '\n';
     return 0;
 }
