@@ -1,0 +1,20 @@
+classDiagram
+    class Student {
+        -int roll
+        -string name
+        -double marks
+        +getRoll() int
+        +display() void
+        +serialize() string
+        +parse(line) Student
+    }
+    class StudentPortal {
+        -map~int, Student~ students
+        -string filename
+        -save() void
+        -load() void
+        +add() void
+        +show() void
+        +search() void
+    }
+    StudentPortal *-- Student : stores
