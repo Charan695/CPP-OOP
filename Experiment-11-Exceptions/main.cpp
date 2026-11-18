@@ -24,7 +24,7 @@ public:
         if (amount <= 0) throw InvalidAmount();
         if (amount > balance) throw InsufficientFunds();
         balance -= amount;
-        cout << "Withdrawal successful. Balance: " << balance << '\\n';
+        cout << "Withdrawal successful. Balance: " << balance << '\n';
     }
 };
 
@@ -32,8 +32,8 @@ int main() {
     BankAccount account(2500);
     for (double amount : {500.0, 3000.0, -50.0}) {
         try { account.withdraw(amount); }
-        catch (const InvalidAmount& e) { cerr << "Invalid amount: " << e.what() << '\\n'; }
-        catch (const InsufficientFunds& e) { cerr << "Declined: " << e.what() << '\\n'; }
-        catch (const BankingException& e) { cerr << "Bank error: " << e.what() << '\\n'; }
+        catch (const InvalidAmount& e) { cerr << "Invalid amount: " << e.what() << '\n'; }
+        catch (const InsufficientFunds& e) { cerr << "Declined: " << e.what() << '\n'; }
+        catch (const BankingException& e) { cerr << "Bank error: " << e.what() << '\n'; }
     }
 }
