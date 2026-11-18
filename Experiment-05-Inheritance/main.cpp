@@ -8,7 +8,7 @@ protected:
     int age;
 public:
     Person(string n, int a) : name(std::move(n)), age(a) {}
-    void introduce() const { cout << name << ", age " << age << '\\n'; }
+    void introduce() const { cout << name << ", age " << age << '\n'; }
 };
 
 class Student : public Person {
@@ -16,7 +16,7 @@ protected:
     int roll;
 public:
     Student(string n, int a, int r) : Person(std::move(n), a), roll(r) {}
-    void showStudent() const { introduce(); cout << "Roll: " << roll << '\\n'; }
+    void showStudent() const { introduce(); cout << "Roll: " << roll << '\n'; }
 };
 
 class GraduateStudent : public Student {
@@ -24,7 +24,7 @@ class GraduateStudent : public Student {
 public:
     GraduateStudent(string n, int a, int r, string area)
         : Student(std::move(n), a, r), researchArea(std::move(area)) {}
-    void display() const { showStudent(); cout << "Research: " << researchArea << '\\n'; }
+    void display() const { showStudent(); cout << "Research: " << researchArea << '\n'; }
 };
 
 int main() {
