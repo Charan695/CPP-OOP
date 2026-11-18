@@ -22,17 +22,17 @@ int main() {
         nameToMarks[s.name] = s.marks;
     }
 
-    cout << "Sorted students:\\n";
+    cout << "Sorted students:\n";
     for (const auto& s : students)
-        cout << s.roll << ' ' << s.name << ' ' << s.marks << '\\n';
+        cout << s.roll << ' ' << s.name << ' ' << s.marks << '\n';
 
     auto high = find_if(students.begin(), students.end(),
                         [](const Student& s) { return s.marks >= 80; });
-    if (high != students.end()) cout << "First high scorer: " << high->name << '\\n';
+    if (high != students.end()) cout << "First high scorer: " << high->name << '\n';
 
     vector<double> marks(students.size());
     transform(students.begin(), students.end(), marks.begin(),
               [](const Student& s) { return s.marks; });
-    cout << "Average: " << accumulate(marks.begin(), marks.end(), 0.0) / marks.size() << '\\n';
-    cout << "Roll 2: " << rollToName[2] << ", Riya: " << nameToMarks["Riya"] << '\\n';
+    cout << "Average: " << accumulate(marks.begin(), marks.end(), 0.0) / marks.size() << '\n';
+    cout << "Roll 2: " << rollToName[2] << ", Riya: " << nameToMarks["Riya"] << '\n';
 }
