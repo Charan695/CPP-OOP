@@ -5,7 +5,7 @@ class Complex {
     double real, imaginary;
 public:
     Complex(double r = 0, double i = 0) : real(r), imaginary(i) {}
-    void display() const { cout << real << " + " << imaginary << "i\\n"; }
+    void display() const { cout << real << " + " << imaginary << "i\n"; }
     void display(const string& label) const { cout << label << ": "; display(); }
     Complex operator+(const Complex& other) const {
         return {real + other.real, imaginary + other.imaginary};
