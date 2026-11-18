@@ -25,9 +25,9 @@ template <typename T>
 void testStack(T a, T b) {
     Stack<T> stack;
     stack.push(a); stack.push(b);
-    cout << "Top: " << stack.top() << ", size: " << stack.size() << '\\n';
+    cout << "Top: " << stack.top() << ", size: " << stack.size() << '\n';
     stack.pop();
-    cout << "After pop: " << stack.top() << '\\n';
+    cout << "After pop: " << stack.top() << '\n';
 }
 
 int main() {
