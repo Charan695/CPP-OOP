@@ -1,0 +1,8 @@
+app
+a.out
+*.o
+.DS_Store
+.vscode/
+.idea/
+students.csv
+portal_students.csv
