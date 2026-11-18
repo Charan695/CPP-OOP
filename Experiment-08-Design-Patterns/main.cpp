@@ -13,7 +13,7 @@ public:
         static Logger logger; // Thread-safe initialization since C++11.
         return logger;
     }
-    void log(const string& message) const { cout << "[LOG] " << message << '\\n'; }
+    void log(const string& message) const { cout << "[LOG] " << message << '\n'; }
 };
 
 int main() {
